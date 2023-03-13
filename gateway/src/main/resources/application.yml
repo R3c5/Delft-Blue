@@ -1,0 +1,8 @@
+spring:
+  kafka:
+    consumer:
+      # Specifies the name of the consumer group a Kafka consumer belongs to
+      group-id: default
+    # Kafka server location. By accessing the localhost, we're acessing the
+    # kafka within the docker container running on port 29092
+    bootstrap-servers: localhost:29092

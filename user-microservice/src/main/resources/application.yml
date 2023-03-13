@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    # Kafka server location. By accessing the localhost, we're acessing the
+    # kafka within the docker container running on port 9002
+    bootstrap-servers: localhost:29092
+
+server:
+  #Port where our producer application will be running
+  port: 8081
+
+kafka:
+  #Topic where we want to post
+  topic: example-topic
